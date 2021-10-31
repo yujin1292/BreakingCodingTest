@@ -34,7 +34,9 @@
 ### Prime (에라토스테네스의 체 이용 )
 - https://www.acmicpc.net/problem/1929
 - https://www.acmicpc.net/problem/2581
-- https://www.acmicpc.net/problem/1747
+
+### Prime 어려운문제
+- https://www.acmicpc.net/problem/1747 
 
 
 ### 소인수분해
