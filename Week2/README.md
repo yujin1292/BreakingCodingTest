@@ -8,7 +8,7 @@
 
 4. 숙제는 기한이 없으나, ``` 일요일 자정 까지```는 머지할수 있도록 부탁드립니다 
 
-5. 추후에 어려운 문제를 숙제로 받았을 경우 풀이가 필요한 경우는 ```Create Issue```  해주세요
+5. 문제를 못풀겠거나, 통과하긴 했으나 제대로 풀지못한것같아 풀이가 필요한 경우는 ```Create Issue```  해주세요
 
 6. 가능하면 인터넷 검색대신 ```스스로 생각```해보기 ! 배운 내용을 응용해서 풀수있는 문제를 위주로 내기떄문에 ..
 
@@ -31,7 +31,7 @@
 - https://www.acmicpc.net/problem/1935
 - https://www.acmicpc.net/problem/1918
 
-### Prime
+### Prime (에라토스테네스의 체 이용 )
 - https://www.acmicpc.net/problem/1929
 - https://www.acmicpc.net/problem/2581
 - https://www.acmicpc.net/problem/1747
