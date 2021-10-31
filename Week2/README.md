@@ -35,7 +35,7 @@
 - https://www.acmicpc.net/problem/1929
 - https://www.acmicpc.net/problem/2581
 
-### Prime 어려운문제
+### Prime 응용 문제
 - https://www.acmicpc.net/problem/1747 
 
 
