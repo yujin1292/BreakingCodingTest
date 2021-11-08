@@ -35,10 +35,13 @@ Google Meet
     - 푸는 방법에 대해서 2시간 이상 고민하지 말고 같이 풀어봐요
     
     
-## Project
+## 🪧 Project 🪧
 진행상황을 한눈에 확인할 수 있습니다
 
-👉 https://github.com/users/yujin1292/projects/1
+👇 CLICK!! 👇 
+
+
+ [![37-375056_clip-art-microsoft-word-2013](https://user-images.githubusercontent.com/27190708/140762273-feade3cf-df31-460d-bfdd-e7f84ace898f.png)](https://github.com/users/yujin1292/projects/1)
 
 
 
