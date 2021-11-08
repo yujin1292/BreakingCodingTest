@@ -24,13 +24,13 @@ Google Meet
 2. 숙제는 어떻게 제출하나요?
 
 
-    각자 Branch를 만들고 ( [ week N ] ~~ )  homework/각자이름폴더/ 에커밋 후 PR(풀리퀘스트) 해주세요.
+    각자 사용할 Branch를 만들고 (혹은 본인 레포에 Fork)  ```homework/Name/``` 디렉토리에 커밋 후 ```PR```(풀리퀘스트) 해주세요.
     (PR시 라벨, Reviewer, Assignees, Project 를 체크해주세요.)
     
     
     [ 공지사항 ]
-    - Pull Request할때는 소스파일만 부탁드립니다
-    - 커밋 사항이 여러개 있을경우 Merge 할때 Squash and mearge 로 머지해주세요
+    - ```Pull Request```할때는 소스파일만 부탁드립니다
+    - 커밋 사항이 여러개 있을경우``` Merge``` 할때 ```Squash and mearge``` 로 머지해주세요
     - 숙제를 마치지 못해도 진행한 상황까지 일요일 자정 PR 해주세요
     - 푸는 방법에 대해서 2시간 이상 고민하지 말고 같이 풀어봐요
     
