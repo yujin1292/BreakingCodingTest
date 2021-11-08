@@ -19,8 +19,8 @@ public class eratosthenes_1929_issue {
 
         boolean[] sieve = new boolean[end+1];
 
-        sieve[0] = sieve[1] = false;
         for (int i = start; i <= end; i++) sieve[i] = true;
+        sieve[0] = sieve[1] = false;
 
         for (int i = 2; i <= Math.sqrt(end); i++) {
             for (int j = i; i*j <= end; j++) {
