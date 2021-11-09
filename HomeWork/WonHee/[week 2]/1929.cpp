@@ -10,19 +10,19 @@ int main() {
 
 	cin >> M >> N;
 
-	for (int i = M; i <= N; i++) {
-		prime[i] = i;
+	memset(prime, 1, sizeof(prime));
+
+	prime[0] = prime[1] = false;
+
+	for (int i = 2; i <= (int)(sqrt(1000000)); i++) {
+		if (prime[i]) {
+			for (int j = i * i; j <= 1000000; j += i)
+				prime[j] = false;
+		}
 	}
 
-	prime[1] = 0;
-
-	for (int i = 2; i <= (int)sqrt(N); i++) {
-		for (int j = 2 * i; j <= N; j += i)
-			prime[j] = 0;
-	}
-
 	for (int i = M; i <= N; i++) {
-		if (prime[i] != 0)
+		if (prime[i])
 			cout << i << '\n';
 	}
 
