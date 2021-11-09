@@ -15,7 +15,7 @@ Google Meet
 
 기본 개념 수업이 끝난 후에는 정해진 문제를 같이 풀고, **서로의 의견을 나누는 형태**로 진행한다.
 
-## 🤷‍♀️  to Use Repository? 🤷‍
+## 🤷‍♀️ How to Use Repository? 🤷‍
 1. 질문, 코드 도움필요, 공부하고싶은것들이 있어요!
 
     Issue 생성후, 적절한 Label을 붙인후 Assignees 에 태그해주세요!
