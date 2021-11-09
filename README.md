@@ -1,6 +1,6 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fyujin1292%2FBreakingCodingTest&count_bg=%23ADABFF&title_bg=%23456696&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=300&text=Breaking%20Coding%20Test&desc=with%20bright%20future&descAlignY=70)
+![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=300&text=Breaking%20Coding%20Test&desc=with%20a%20bright%20future&descAlignY=70)
 
 
 
@@ -15,7 +15,7 @@ Google Meet
 
 기본 개념 수업이 끝난 후에는 정해진 문제를 같이 풀고, **서로의 의견을 나누는 형태**로 진행한다.
 
-## 🤷‍♀️How to Use Repository?🤷‍
+## 🤷‍♀️  to Use Repository? 🤷‍
 1. 질문, 코드 도움필요, 공부하고싶은것들이 있어요!
 
     Issue 생성후, 적절한 Label을 붙인후 Assignees 에 태그해주세요!
