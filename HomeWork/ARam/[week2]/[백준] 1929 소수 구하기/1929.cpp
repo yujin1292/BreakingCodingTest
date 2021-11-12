@@ -1,24 +1,23 @@
 #include <iostream>
 #include <cmath>
+#include <cstring>
 #define MAX 1000001
 using namespace std;
 
-int prime[MAX];
+bool isPrime[MAX];
 
-bool isPrime(int n) {
-	if (n == 1)
-		return false;
-	if (n == 2)
-		return true;
-	if (n % 2 == 0)
-		return false;
+void check(int n) {
+	memset(isPrime, 1, sizeof(isPrime));
+	isPrime[0] = isPrime[1] = false;
 
-	for (int i = 3; i <= sqrt(n); i += 2) {
-		if (n % i == 0)
-			return false;
+	for (int i = 2; i <= sqrt(n); i++) {
+		if (isPrime[i]) {
+			for (int j = i*i; j <= n; j += i) {
+				isPrime[j] = false;
+			}
+		}
 	}
 
-	return true;
 }
 
 int main() {
@@ -29,9 +28,10 @@ int main() {
 	int M, N;
 	cin >> M >> N;
 
+	check(N);
+
 	for (int i = M; i <= N; i++) {
-		prime[i] = isPrime(i);
-		if (prime[i] == true)
+		if (isPrime[i] == true)
 			cout << i << "\n";
 	}
 
