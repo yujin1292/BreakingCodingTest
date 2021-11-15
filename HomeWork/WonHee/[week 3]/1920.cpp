@@ -15,7 +15,7 @@ void binary(int n) {
 		mid = (s + e) / 2;
 		if (A[mid] == n) {
 			cout << 1 << "\n";
-			break;
+			return;
 		}
 		else if (A[mid] > n)
 			e = mid - 1;
