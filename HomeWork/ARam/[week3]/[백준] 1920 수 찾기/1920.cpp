@@ -1,15 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#define MAX 100001
 using namespace std;
 
-//vector<int> v;
-int arr[MAX];
+vector<int> v;
 
 int b_search(int s, int e, int n) {
 	if (s == e) {
-		if (n == arr[s])
+		if (n == v.at(s))
 			return 1;
 		else
 			return 0;
@@ -17,18 +15,22 @@ int b_search(int s, int e, int n) {
 
 	int m = (s + e) / 2;
 
-	if (n == arr[m])
+	if (n == v.at(m))
 		return 1;
 
-	if (n > arr[m])
-		b_search(m + 1, e, n);
+	if (n > v.at(m))
+		return b_search(m + 1, e, n);
 
 	else
-		b_search(s, m - 1, n);
+		return b_search(s, m - 1, n);
 }
 
 
 int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+
 	int N, M;
 
 	cin >> N;
@@ -36,12 +38,10 @@ int main() {
 	for (int i = 0; i < N; i++) {
 		int n;
 		cin >> n;
-		//v.push_back(n);
-		arr[i] = n;
+		v.push_back(n);
 	}
 
-	//sort(v.begin(), v.end());
-	sort(arr, arr + N);
+	sort(v.begin(), v.end());
 
 	cin >> M;
 
