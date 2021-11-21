@@ -13,8 +13,6 @@ for _ in range(NoPC):
     graph[v1].append(v2)
     graph[v2].append(v1)
 
-for i in range(1,NoPC+1):
-    graph[i].sort()
 
 visited = [False] * (NoC+1)
 
