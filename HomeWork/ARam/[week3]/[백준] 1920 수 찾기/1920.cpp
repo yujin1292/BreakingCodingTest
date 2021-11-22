@@ -6,7 +6,7 @@ using namespace std;
 vector<int> v;
 
 int b_search(int s, int e, int n) {
-	if (s == e) {
+	if (s >= e) {
 		if (n == v.at(s))
 			return 1;
 		else
