@@ -11,27 +11,32 @@ queue<pair<int, int> > q;
 void calc(int v1, int v2) {
 	q.push(make_pair(v1, 0));
 	visit[v1] = 1;
+	int chonsu = 0;
 
 	while (!q.empty()) {
-		int cur = q.front().first;
-		int size = G[cur].size();
-		int chonsu = q.front().second;
+		//int chonsu = q.front().second;
+		int qsize = q.size();
+		
+		while (qsize--) {
+			int cur = q.front().first;
+			int size = G[cur].size();
 
-		if (q.front().first == v2) {
-			cout << q.front().second << endl;
-			return;
-		}
+			if (cur == v2) {
+				cout << q.front().second << endl;
+				return;
+			}
 
-		for (int i = 0; i < size; i++) {
-			int next = G[cur][i];
-			if (visit[next])
-				continue;
-			q.push(make_pair(next, chonsu + 1));
-			visit[next] = 1;
+			for (int i = 0; i < size; i++) {
+				int next = G[cur][i];
+				if (visit[next])
+					continue;
+				q.push(make_pair(next, chonsu + 1));
+				visit[next] = 1;
+			}
+			q.pop();
 		}
-		q.pop();
+		chonsu++;
 	}
-
 	cout << -1 << endl;
 }
 
