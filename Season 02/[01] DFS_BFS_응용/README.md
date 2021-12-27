@@ -28,6 +28,8 @@
 
 ## Week 7 문제
 
+[백준에서 확인하기](https://www.acmicpc.net/group/practice/12843/4)
+
 | 구분 | 번호 | 문제링크 |
 |----|--|-----|
 | A |2178 | https://www.acmicpc.net/problem/2178 |
