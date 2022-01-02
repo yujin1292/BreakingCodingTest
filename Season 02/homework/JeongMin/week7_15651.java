@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class week6_15649 {
+public class week7_15651 {
     public static int[] visited; // 노드를 방문했는지 확인
     public static int[] result; // 수열을 저장할 배열
     public static StringBuilder sb = new StringBuilder();
@@ -33,12 +33,14 @@ public class week6_15649 {
         }
 
         for (int i = 1; i <= N; i++) {
-            if(visited[i] == 0) {
-                visited[i] = 1; // 노드 방문 표시
+            // 중복을 허용하므로 visited 배열이 필요 없음
+//            if(visited[i] == 0) {
+//                visited[i] = 1; // 노드 방문 표시
                 result[depth] = i; // 수열의 원소 저장
                 dfs(N, M, depth+1);
-                visited[i] = 0; // dfs가 끝나면 방문 표시 제거
-            }
+//                visited[i] = 0; // dfs가 끝나면 방문 표시 제거
+//            }
         }
     }
 }
+
