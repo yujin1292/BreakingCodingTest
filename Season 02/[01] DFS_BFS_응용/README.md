@@ -37,3 +37,16 @@
 | C | 15649 | https://www.acmicpc.net/problem/15649 |
 | D | 15651 |https://www.acmicpc.net/problem/15651 |
 
+
+## Week 8 문제
+
+[백준에서 확인하기](https://www.acmicpc.net/group/practice/12843/5)
+
+| 구분 | 문제명 | 문제링크 |
+|----|--|-----|
+| A | N과 M (9) | https://www.acmicpc.net/problem/15663 |
+| B | 로또 | https://www.acmicpc.net/problem/6603 |
+| C | 숨바꼭질 |https://www.acmicpc.net/problem/1697 |
+| D | 스타트와 링크 | https://www.acmicpc.net/problem/14889 |
+| E | 암호만들기 | https://www.acmicpc.net/problem/1759 |
+
