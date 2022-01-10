@@ -39,7 +39,7 @@ public class week8_14889 {
         for (int i = s; i < N; i++) {
             if(visited[i] == 0) {
                 visited[i] = 1; // 노드 방문 표시
-                dfs(s+1, N,depth+1);
+                dfs(i+1, N,depth+1);
                 visited[i] = 0; // dfs가 끝나면 방문 표시 제거
             }
         }
