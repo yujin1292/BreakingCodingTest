@@ -1,11 +1,5 @@
 # Week 9
 
-Subject 1: Dijkstra 알고리즘
-Subject 2: Floyd Warshall 알고리즘
-Subject 3: Bellman-Ford 알고리즘
-Subject 4: Union Find
-Subject 5: Kruskal's Algorlthm
-
 ## **최단 거리**
 
 ### **Dijkstra 알고리즘**
@@ -214,7 +208,7 @@ public class Floyd {
 
 - **Dijkstra** 알고리즘의 한계를 해결
     
-    ![Untitled](Week%209%20cef1e5dd4f184d3581ba43b1bc80cb57/Untitled.png)
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7b3d0726-e26b-4d0a-87a8-8c89a3be07e1/Untitled.png)
     
     - A → B → C : cost = 3
     - A → C : cost = 5
