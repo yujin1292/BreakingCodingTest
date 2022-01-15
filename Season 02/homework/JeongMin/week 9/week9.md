@@ -208,7 +208,8 @@ public class Floyd {
 
 - **Dijkstra** 알고리즘의 한계를 해결
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7b3d0726-e26b-4d0a-87a8-8c89a3be07e1/Untitled.png)
+    ![Untitled](https://user-images.githubusercontent.com/62470991/149624095-63674bf0-19d0-49a8-b7aa-3f5c83b9f67b.png)
+
     
     - A → B → C : cost = 3
     - A → C : cost = 5
