@@ -57,6 +57,12 @@ DFS와 BFS는 결국 `완전 탐색` 이기에 조금만 경우의 수가 늘어
 
 ---
 ### Week 10
+[백준에서 확인하기](https://www.acmicpc.net/group/practice/12843/6)
 
----
-### Week 11
+| 구분 | 번호 | 문제링크 |  |
+|----|--|-----|---|
+| A | 1922 | https://www.acmicpc.net/problem/1922 | |
+| B | 1753 | https://www.acmicpc.net/problem/1753 | |
+| C | 1916 | https://www.acmicpc.net/problem/1916 | |
+| D | 1238 |https://www.acmicpc.net/problem/1238 | |
+| E | 1197 |https://www.acmicpc.net/problem/1197 | |
