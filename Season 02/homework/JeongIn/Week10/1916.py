@@ -1,9 +1,5 @@
 # 다익스트라 알고리즘
-# V줄에 걸쳐서
-# i번째 줄에 i번 정점으로의 최단 경로의 경로값 출력
-
-# 시작점 자신은 0
-# 경로가 존재하지 않는다면 INF
+# 출발 도시에서 도착 도시까지 가는데 드는 최소 비용
 
 import heapq
 import sys
@@ -11,7 +7,7 @@ import sys
 input = sys.stdin.readline
 INF = int(1e9)  # 무한을 의미하는 값으로 10억을 설정
 
-# 노드의 개수, 간선의 개수를 입력받기
+# 도시의 수, 버스의 수 입력
 N = int(input().rstrip())
 M = int(input().rstrip())
 

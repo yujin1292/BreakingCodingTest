@@ -25,9 +25,9 @@ distance = [INF] * (V + 1)
 
 # 모든 간선 정보를 입력받기
 for _ in range(E):
-    u, v, w = map(int, input().split())
-    # u번 노드에서 v번 노드로 가는 비용이 w라는 의미
-    graph[u].append((v, w))
+    a, b, c = map(int, input().split())
+    # a 도시에서 b 도시 가는 데 드는 버스 비용은 c
+    graph[a].append((b, c))
 
 # 우선순위 큐로 푸는 방법!
 def dijkstra(start):
