@@ -37,6 +37,12 @@ def dfs(depth, pos):
                 elif not visited[i] and not visited[j]:
                     # False팀(link 라고 가정)일 경우
                     link += S[i][j] + S[j][i]
+                if visited[i] and visited[j]:
+                    # True팀(start 라고 가정)일 경우
+                    start += S[i][j] + S[j][i]
+                elif not visited[i] and not visited[j]:
+                    # False팀(link 라고 가정)일 경우
+                    link += S[i][j] + S[j][i]
 
         min_diff = min(min_diff, abs(start-link)) # 현재 방법으로 팀을 배정했을 시 두 팀의 능력치 차이 저장 # 방법에 따라 갱신 될 수 있음
         return
