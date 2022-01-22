@@ -334,6 +334,7 @@ edges.sort()
 for i in range(m):
     cost, a, b = edges[i]
     # find 연산 후, 부모노드 다르면 사이클 발생되지 않으므로 union 연산 수행 = 최소 신장 트리에 포함!
+
     if find_parent(a) != find_parent(b):
         union_parent(a, b)
         total_cost += cost
