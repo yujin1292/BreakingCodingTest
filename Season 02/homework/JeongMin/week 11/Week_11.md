@@ -33,10 +33,10 @@ Subject 1: Dynamic Programming
     // memo[0]을 0으로, memo[1]은 1로 초기화
     
     fibo1(n)
-    			IF n >= 2 AND memo[n] = 0
-    			// memo[n] = 0 이면 처음 계산하는 것
-    						memo[n] <- fibo1(n-1) + fibo1(n-2)
-    			RETURN memo[n]
+    		IF n >= 2 AND memo[n] = 0
+    		// memo[n] = 0 이면 처음 계산하는 것
+    				memo[n] <- fibo1(n-1) + fibo1(n-2)
+    		RETURN memo[n]
     ```
     
     - 메모 배열 : 피보나치 수열의 n번째 값을 저장
@@ -86,10 +86,10 @@ Subject 1: Dynamic Programming
     
     ```java
     public static int dp(int x) {
-    				if (x == 1) return 1;
-    				if (x == 2) return 2;
-    				if (d[x] != 0) return d[x];
-    				return d[x] = (dp(x-1) + dp(x-2)) % 10007;
+    		if (x == 1) return 1;
+    		if (x == 2) return 2;
+    		if (d[x] != 0) return d[x];
+    		return d[x] = (dp(x-1) + dp(x-2)) % 10007;
     }
     ```
     
@@ -101,10 +101,10 @@ Subject 1: Dynamic Programming
     
     ```java
     public static int dp(int x) {
-    				if (x == 1) return 1;
-    				if (x == 2) return 3;
-    				if (d[x] != 0) return d[x];
-    				return d[x] = (dp(x-1) + 2*dp(x-2)) % 10007;
+    		if (x == 1) return 1;
+    		if (x == 2) return 3;
+    		if (d[x] != 0) return d[x];
+    		return d[x] = (dp(x-1) + 2*dp(x-2)) % 10007;
     }
     ```
     
@@ -117,17 +117,17 @@ Subject 1: Dynamic Programming
     
     ```java
     public static int dp(int x) {
-    				if (x == 0) return 1;
-    				if (x == 1) return 0;
-    				if (x == 1) return 3;
-    				if (d[x] != 0) return d[x];
-    				int result = 3 * dp(x-2);
-    				for (int i = 3; i <= x; i++) {
-    								if (i % 2 == 0) {
-    												result += 2 * d{x - i);
-    								}
+    		if (x == 0) return 1;
+    		if (x == 1) return 0;
+    		if (x == 1) return 3;
+    		if (d[x] != 0) return d[x];
+    		int result = 3 * dp(x-2);
+    		for (int i = 3; i <= x; i++) {
+    				if (i % 2 == 0) {
+    						result += 2 * d{x - i);
     				}
-    				return d[x] = result;
+    		}
+    		return d[x] = result;
     }
     ```
     
@@ -141,15 +141,15 @@ Subject 1: Dynamic Programming
     public static int d[1000001];
     
     public static int dp(int x) {
-    				if (x == 0) return 1;
-    				if (x == 1) return 2;
-    				if (x == 1) return 7;
-    				if (d[x] != 0) return d[x];
-    				int result = 3 * dp(x-2) + 2 * dp(x-1);
-    				for (int i = 3; i <= x; i++) {
-    								result += (2*dp(x-i)) % 1000000007;
-    				}
-    				return d[x] = result % 1000000007;
+    		if (x == 0) return 1;
+    		if (x == 1) return 2;
+    		if (x == 1) return 7;
+    		if (d[x] != 0) return d[x];
+    		int result = 3 * dp(x-2) + 2 * dp(x-1);
+    		for (int i = 3; i <= x; i++) {
+    				result += (2*dp(x-i)) % 1000000007;
+    		}
+    		return d[x] = result % 1000000007;
     }
     ```
     
@@ -162,15 +162,15 @@ Subject 1: Dynamic Programming
     // 2번째 행은 2씩 고유한 경우의 수가 추가되는 것을 계산하기 위해 사용
     
     public static long dp(int x) {
-    				d[0][0] = 0;
-    				d[1][0] = 2;
-    				d[2][0] = 7;
-    				d[2][1] = 1;
-    				for (int i = 3; i <= x; i++) {
-    								d[i][1] = (d[i-1][1] + d[i-3][0]) % 1000000007;
-    								d[i][0] = (3*d[i-2][0] + 2*d[i-1][0] + 2*d[i][1]) % 1000000007;
-    				}
-    				return d[x][0];
+    		d[0][0] = 0;
+    		d[1][0] = 2;
+    		d[2][0] = 7;
+    		d[2][1] = 1;
+    		for (int i = 3; i <= x; i++) {
+    				d[i][1] = (d[i-1][1] + d[i-3][0]) % 1000000007;
+    				d[i][0] = (3*d[i-2][0] + 2*d[i-1][0] + 2*d[i][1]) % 1000000007;
+    		}
+    		return d[x][0];
     }
     ```
     
@@ -194,11 +194,11 @@ Subject 1: Dynamic Programming
 
 ```markup
 fibo_dp(n)
-					f[0] <- 0
-					f[1] <- 1
-					FOR i in 2 -> n
-							f[i] <- f[i-1] + f[i-2]
-					RETURN f[n]
+	f[0] <- 0
+	f[1] <- 1
+	FOR i in 2 -> n
+		f[i] <- f[i-1] + f[i-2]
+	RETURN f[n]
 ```
 
 - 피보나치 수 → 동적 계획법 적용 : 재귀 알고리즘 구현에 비해 속도 빠름 (중복 계산이 없기 때문)
@@ -233,20 +233,20 @@ fibo_dp(n)
     // memo[] : 이미 구한 부분 문제의 해를 저장
     
     CoinChange(change)
-    				IF memo[change] != -1
-    								RETURN memo[change]
-    				IF change = 0
-    								RETURN 0
-    				ELSE
-    								min <- INF
-    								FOR i <- 0 TO COINNUM - 1
-    												IF change - coin[i] >= 0
-    															ret <- coin_change(change-coin[i])
-    															// 선택한 동전의 금액 만큼 차감한 금액에 대한 해를 구하기 위해 재귀 호출
-    												IF ret < min
-    															min = ret
-    				memo[change] <- min + 1
+    		IF memo[change] != -1
     				RETURN memo[change]
+    		IF change = 0
+    				RETURN 0
+    		ELSE
+    				min <- INF
+    				FOR i <- 0 TO COINNUM - 1
+    					IF change - coin[i] >= 0
+    						ret <- coin_change(change-coin[i])
+    						// 선택한 동전의 금액 만큼 차감한 금액에 대한 해를 구하기 위해 재귀 호출
+    					IF ret < min
+    						min = ret
+    		memo[change] <- min + 1
+    		RETURN memo[change]
     ```
     
 - 상향식
@@ -260,17 +260,17 @@ fibo_dp(n)
     // memo[] : 부분 문제의 해를 저장
     
     CoinChange(change)
-    				memo[0] = 0
-    				FOR N <- 1 TO change
-    								min <- INF
-    									FOR i <- 1 TO COINNUM - 1// 모든 동전 종류에 대해 반복
-    												IF N >= coin[i] // n보다 작은 금액 동전인가?
-    															IF memo[N-coin[i]] < min
-    															// 현재 선택한 동전의 금액을 차감한 금액에 대한
-    															// 해를 가져와서 최소값인지 비교
-    												min = memo[N-coin[i]]
-    								memo[N] = min + 1
-    				RETURN memo[change]
+    		memo[0] = 0
+    		FOR N <- 1 TO change
+    			min <- INF
+    			FOR i <- 1 TO COINNUM - 1// 모든 동전 종류에 대해 반복
+    				IF N >= coin[i] // n보다 작은 금액 동전인가?
+    				IF memo[N-coin[i]] < min
+    				// 현재 선택한 동전의 금액을 차감한 금액에 대한
+    				// 해를 가져와서 최소값인지 비교
+    				min = memo[N-coin[i]]
+    			memo[N] = min + 1
+    		RETURN memo[change]
     ```
     
 
@@ -280,8 +280,7 @@ fibo_dp(n)
     - (x+y)^n을 전개했을 때 x^k * y^(n-k)의 계수 값은?
     - 이항계수 구하는 공식
         
-        ![Untitled](Week%2011%20969a77d75ca64e6fa4e0d5d1760725a7/Untitled.png)
-        
+        ![Untitled](https://user-images.githubusercontent.com/62470991/151749753-e6d8aee6-3c58-4664-8a4a-9ea3dd1e4281.png)        
     - 파스칼의 삼각형 : 이항 계수를 삼각형 모양의 기하학적 형태로 배열한 것
         - C(n, 0) = 1
         - C(n, n) = 1
@@ -291,10 +290,10 @@ fibo_dp(n)
     
     ```markup
     bino(n, k)
-    				IF k = 0 OR n = k
-    								RETURN 1
-    				ELSE
-    								RETURN bino(n-1 ,k-1) + bino(n-1, k)
+    		IF k = 0 OR n = k
+    			RETURN 1
+    		ELSE
+    			RETURN bino(n-1 ,k-1) + bino(n-1, k)
     ```
     
     → 중복이 너무 많아짐
@@ -306,23 +305,23 @@ fibo_dp(n)
     
     B[][] <- {-1}
     bino1(n, r)
-    				IF r = 0 OR n = r : RETURN 1
-    				IF B[n][r] != -1
-    								RETURN B[n][r]
-    				B[n][r] <- bino1(n-1, r-1) + bino1(n-1, r)
-    				RETURN B[n][r]
+    		IF r = 0 OR n = r : RETURN 1
+    		IF B[n][r] != -1
+    			RETURN B[n][r]
+    		B[n][r] <- bino1(n-1, r-1) + bino1(n-1, r)
+    		RETURN B[n][r]
     ```
     
     - 동적 계획법을 적용한 이항계수 계산 : O(nk)
     
     ```markup
     bino2(n, k)
-    				B[][]
-    				FOR i in 0 -> n
-    								FOR j in 0 -> minimum(i, k)
-    												IF j = 0 OR j = i
-    																B[i][j] <- 1
-    												ELSE
-    																B[i][j] <- B[i-1][j-1] + B[i-1][j]
-    				RETURN B[n][k]
+    		B[][]
+    		FOR i in 0 -> n
+    			FOR j in 0 -> minimum(i, k)
+    				IF j = 0 OR j = i
+    					B[i][j] <- 1
+    				ELSE
+    					B[i][j] <- B[i-1][j-1] + B[i-1][j]
+    		RETURN B[n][k]
     ```
