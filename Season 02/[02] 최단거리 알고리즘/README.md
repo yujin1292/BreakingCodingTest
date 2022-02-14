@@ -64,5 +64,5 @@ DFS와 BFS는 결국 `완전 탐색` 이기에 조금만 경우의 수가 늘어
 | A | 1922 | https://www.acmicpc.net/problem/1922 | |
 | B | 1753 | https://www.acmicpc.net/problem/1753 | |
 | C | 1916 | https://www.acmicpc.net/problem/1916 | |
-| D | 1238 |https://www.acmicpc.net/problem/1238 | |
+| D | 1238 |https://www.acmicpc.net/problem/1238 | [정답 코드](./1238.md) |
 | E | 1197 |https://www.acmicpc.net/problem/1197 | |
