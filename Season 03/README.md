@@ -2,7 +2,7 @@
 
 ## ❤️‍🔥 Rule
 
-1. 스터디 멘토 ( @yujin1292 ) 와  스터디원( @jeongiin @j-miiin ) 들이 문제를 제안
+1. 스터디 멘토와  스터디원들이 문제를 제안
 2. 스터디 멘토가 문제 우선순위를 선정
 3. 스터디 멘토 및 스터디원들이 일주일 간 문제를 풀이
     - 주언어가 다른 점을 고려하여 가독성을 위한 주석 필수
@@ -14,9 +14,9 @@
 ## ❤️ Member
 |Name|Github|Role|
 |------|---|---|
-|이유진|@yujin1292|스터디 멘토|
-|김정민|@j-miiin|스터디원|
-|이정인|@jeongiin|스터디원|
+|이유진|[@yujin1292](https://github.com/yujin1292)|스터디 멘토|
+|김정민|[@j-miiin](https://github.com/j-miiin)|스터디원|
+|이정인|[@jeongiin](https://github.com/jeongiin)|스터디원|
 
 </br>
 </br>
