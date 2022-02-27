@@ -2,7 +2,7 @@
 
 ## ❤️‍🔥 Rule
 
-1. 스터디 멘토와  스터디원들이 문제를 제안
+1. 스터디 멘토와  스터디원들이 문제를 Issue를 통해 제안
 2. 스터디 멘토가 문제 우선순위를 선정
 3. 스터디 멘토 및 스터디원들이 일주일 간 문제를 풀이
     - 주언어가 다른 점을 고려하여 가독성을 위한 주석 필수
@@ -30,10 +30,30 @@
 </br>
 
 ## 🚩 Solved List
-|주차|문제|리뷰|
-|------|---|---|
-|15주차|[적록색약](https://www.acmicpc.net/problem/10026), [제로](https://www.acmicpc.net/problem/10773), [음식물 피하기](https://www.acmicpc.net/problem/1743), [싸이버개강총회](https://www.acmicpc.net/problem/19583), [부녀회장이 될테야](https://www.acmicpc.net/problem/2775)|[유진](https://github.com/yujin1292/BreakingCodingTest/pull/55), [정민](https://github.com/yujin1292/BreakingCodingTest/pull/56), [정인](https://github.com/yujin1292/BreakingCodingTest/pull/57)|
-|16주차|||
+
+
+### 15주차 
+| 문제 | 정인 | 정민 | 유진 |
+|------|:------:|:-----:|:------:|
+|[적록색약](https://www.acmicpc.net/problem/10026) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongIn/Week15/10026.py) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongMin/week%2015/week15_10026.java) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/Yujin/Week%2015/10026%20%EC%A0%81%EB%A1%9D%EC%83%89%EC%95%BD.cpp) |
+|[제로](https://www.acmicpc.net/problem/10773)| [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongIn/Week15/10773.py) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongMin/week%2015/week15_10773.java) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/Yujin/Week%2015/10773%20%EC%A0%9C%EB%A1%9C.cpp) |
+|[음식물 피하기](https://www.acmicpc.net/problem/1743)| [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongIn/Week15/1743.py) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongMin/week%2015/week15_1743.java) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/Yujin/Week%2015/1743%20%EC%9D%8C%EC%8B%9D%EB%AC%BC%20%ED%94%BC%ED%95%98%EA%B8%B0.cpp) |
+|[싸이버개강총회](https://www.acmicpc.net/problem/19583)| [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongIn/Week15/19583.py) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongMin/week%2015/week15_19583.java) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/Yujin/Week%2015/19583%20%EC%8B%B8%EC%9D%B4%EB%B2%84%EA%B0%9C%EA%B0%95%EC%B4%9D%ED%9A%8C.cpp) |
+|[부녀회장이 될테야](https://www.acmicpc.net/problem/2775)| [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongIn/Week15/2775.py) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/JeongMin/week%2015/week15_2775.java) | [💯](https://github.com/yujin1292/BreakingCodingTest/blob/main/Season%2002/homework/Yujin/Week%2015/2775%20%EB%B6%80%EB%85%80%ED%9A%8C%EC%9E%A5%EC%9D%B4%20%EB%90%A0%ED%85%8C%EC%95%BC.cpp) |
+| PR | [#57](https://github.com/yujin1292/BreakingCodingTest/pull/57)|[#56](https://github.com/yujin1292/BreakingCodingTest/pull/56) |[#55](https://github.com/yujin1292/BreakingCodingTest/pull/55) |
+
+</br>
+
+### 16주차 
+| 문제 | Issue | Suggested by |
+|------|:------:| :---:|
+|[트리](https://www.acmicpc.net/problem/10026) | [#58](https://github.com/yujin1292/BreakingCodingTest/issues/58) | [@yujin1292](https://github.com/yujin1292) |
+|[퇴사](https://www.acmicpc.net/problem/10773)| [#60](https://github.com/yujin1292/BreakingCodingTest/issues/60)  | [@j-miiin](https://github.com/j-miiin) |
+|[ACM호텔](https://www.acmicpc.net/problem/1743)| [#66](https://github.com/yujin1292/BreakingCodingTest/issues/66)  | [@jeongiin](https://github.com/jeongiin) |
+|[좌표 압축](https://www.acmicpc.net/problem/18870)| [#68](https://github.com/yujin1292/BreakingCodingTest/issues/68)  | [@jeongiin](https://github.com/jeongiin) |
+|[무한 수열](https://www.acmicpc.net/problem/1351)| [#63](https://github.com/yujin1292/BreakingCodingTest/issues/63)  | [@j-miiin](https://github.com/j-miiin) |
+
+
 
 </br>
 </br>
