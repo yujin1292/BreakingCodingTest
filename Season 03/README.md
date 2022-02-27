@@ -5,8 +5,11 @@
 1. 스터디 멘토 ( @yujin1292 ) 와  스터디원( @jeongiin @j-miiin ) 들이 문제를 제안
 2. 스터디 멘토가 문제 우선순위를 선정
 3. 스터디 멘토 및 스터디원들이 일주일 간 문제를 풀이
-	- 주언어가 다른 점을 고려하여 가독성을 위한 주석 필수
+    - 주언어가 다른 점을 고려하여 가독성을 위한 주석 필수
 4. 문제 풀이는 ```월요일``` 전에 PR을 만들어 제출
+
+</br>
+</br>
 
 ## ❤️ Member
 |Name|Github|Role|
@@ -15,10 +18,16 @@
 |김정민|@j-miiin|스터디원|
 |이정인|@jeongiin|스터디원|
 
+</br>
+</br>
+
 ## 📕 Source of Problem
-[BAEKJOON](https://www.acmicpc.net/)
-[Programmers](https://programmers.co.kr/learn/challenges?tab=all_challenges)
-[SW Expert Academy](https://swexpertacademy.com/main/main.do)
+[BAEKJOON](https://www.acmicpc.net/) </br>
+[Programmers](https://programmers.co.kr/learn/challenges?tab=all_challenges) </br>
+[SW Expert Academy](https://swexpertacademy.com/main/main.do) </br>
+
+</br>
+</br>
 
 ## 🚩 Solved List
 |주차|문제|리뷰|
@@ -26,6 +35,8 @@
 |15주차|[적록색약](https://www.acmicpc.net/problem/10026), [제로](https://www.acmicpc.net/problem/10773), [음식물 피하기](https://www.acmicpc.net/problem/1743), [싸이버개강총회](https://www.acmicpc.net/problem/19583), [부녀회장이 될테야](https://www.acmicpc.net/problem/2775)|[유진](https://github.com/yujin1292/BreakingCodingTest/pull/55), [정민](https://github.com/yujin1292/BreakingCodingTest/pull/56), [정인](https://github.com/yujin1292/BreakingCodingTest/pull/57)|
 |16주차|||
 
+</br>
+</br>
 
 
 ## 🤷‍♀️ How to Use Repository? 🤷
