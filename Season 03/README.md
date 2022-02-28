@@ -47,11 +47,11 @@
 ### 16주차 
 | 문제 | Issue | Suggested by |
 |------|:------:| :---:|
-|[트리](https://www.acmicpc.net/problem/10026) | [#58](https://github.com/yujin1292/BreakingCodingTest/issues/58) | [@yujin1292](https://github.com/yujin1292) |
-|[퇴사](https://www.acmicpc.net/problem/10773)| [#60](https://github.com/yujin1292/BreakingCodingTest/issues/60)  | [@j-miiin](https://github.com/j-miiin) |
-|[ACM호텔](https://www.acmicpc.net/problem/1743)| [#66](https://github.com/yujin1292/BreakingCodingTest/issues/66)  | [@jeongiin](https://github.com/jeongiin) |
-|[좌표 압축](https://www.acmicpc.net/problem/18870)| [#68](https://github.com/yujin1292/BreakingCodingTest/issues/68)  | [@jeongiin](https://github.com/jeongiin) |
-|[무한 수열](https://www.acmicpc.net/problem/1351)| [#63](https://github.com/yujin1292/BreakingCodingTest/issues/63)  | [@j-miiin](https://github.com/j-miiin) |
+|[4803 트리](https://www.acmicpc.net/problem/4803) | [#58](https://github.com/yujin1292/BreakingCodingTest/issues/58) | [@yujin1292](https://github.com/yujin1292) |
+|[14501 퇴사](https://www.acmicpc.net/problem/14501)| [#60](https://github.com/yujin1292/BreakingCodingTest/issues/60)  | [@j-miiin](https://github.com/j-miiin) |
+|[10250 ACM호텔](https://www.acmicpc.net/problem/10250)| [#66](https://github.com/yujin1292/BreakingCodingTest/issues/66)  | [@jeongiin](https://github.com/jeongiin) |
+|[18870 좌표 압축](https://www.acmicpc.net/problem/18870)| [#68](https://github.com/yujin1292/BreakingCodingTest/issues/68)  | [@jeongiin](https://github.com/jeongiin) |
+|[1351 무한 수열](https://www.acmicpc.net/problem/1351)| [#63](https://github.com/yujin1292/BreakingCodingTest/issues/63)  | [@j-miiin](https://github.com/j-miiin) |
 
 
 
