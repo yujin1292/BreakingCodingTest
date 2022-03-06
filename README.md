@@ -20,6 +20,15 @@
     - 해당 주제에서 다룰 문제가 많다면 1주 이상 진행
 
 
+### Season 03
+1. 스터디 멘토와 스터디원들이 문제를 Issue를 만들어 제안
+2. 스터디 멘토가 문제 우선순위를 선정
+3. 스터디 멘토 및 스터디원들이 일주일 간 문제를 풀이
+    - 주언어가 다른 점을 고려하여 가독성을 위한 주석 필수
+4. 문제 풀이는 ```월요일``` 전에 PR을 만들어 제출
+
+
+
 ## 🤷‍♀️ How to Use Repository? 🤷
 1. 질문, 코드 도움필요, 공부하고싶은것들이 있어요!
 
@@ -45,8 +54,10 @@
 
 👇 CLICK!! 👇 
 
+ [![37-375056_clip-art-microsoft-word-2013](https://user-images.githubusercontent.com/27190708/140762273-feade3cf-df31-460d-bfdd-e7f84ace898f.png)](https://github.com/yujin1292/BreakingCodingTest/projects/2)
 
- [![37-375056_clip-art-microsoft-word-2013](https://user-images.githubusercontent.com/27190708/140762273-feade3cf-df31-460d-bfdd-e7f84ace898f.png)](https://github.com/users/yujin1292/projects/1)
+
+ [Season 1 ~ 2 Project](https://github.com/users/yujin1292/projects/1)
 
 
 
