@@ -53,6 +53,15 @@
 |[18870 좌표 압축](https://www.acmicpc.net/problem/18870)| [#68](https://github.com/yujin1292/BreakingCodingTest/issues/68)  | [@jeongiin](https://github.com/jeongiin) |
 |[1351 무한 수열](https://www.acmicpc.net/problem/1351)| [#63](https://github.com/yujin1292/BreakingCodingTest/issues/63)  | [@j-miiin](https://github.com/j-miiin) |
 
+</br>
+
+###  17주차
+| 문제 | Issue | Suggested by |
+|------|:------:| :---:|
+|[15666 N과 M(12)](https://www.acmicpc.net/problem/15666) | [#70](https://github.com/yujin1292/BreakingCodingTest/issues/70) | [@yujin1292](https://github.com/yujin1292) |
+|[10814 나이순 정렬 ](https://www.acmicpc.net/problem/10814) | [#67](https://github.com/yujin1292/BreakingCodingTest/issues/67) |[@jeongiin](https://github.com/jeongiin)|
+|[13460 구슬탈출2](https://www.acmicpc.net/problem/13460 ) | [#61](https://github.com/yujin1292/BreakingCodingTest/issues/61) | [@j-miiin](https://github.com/j-miiin)|
+|[14888 연산자 끼워넣기](https://www.acmicpc.net/problem/14888) | [#62](https://github.com/yujin1292/BreakingCodingTest/issues/62) | [@j-miiin](https://github.com/j-miiin) |
 
 
 </br>
