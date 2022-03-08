@@ -1,4 +1,7 @@
-import java.util.*
+import java.io.BufferedReader
+import java.io.BufferedWriter
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
 import java.util.Collections.sort
 
 data class User(
@@ -10,16 +13,18 @@ data class User(
         else age.compareTo(other.age)
     }
     // 출력하기 편하려고 toString 오버라이딩 했슴니다
-    override fun toString(): String = "$age $name"
+    override fun toString(): String = "$age $name\n"
 }
 
-fun main() = with(Scanner(System.`in`)) {
-    val n = nextLine().toInt()
+fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
+    val bw = BufferedWriter(OutputStreamWriter(System.out))
     val users = mutableListOf<User>()
-    repeat(n) {
-        val temp = nextLine().split(" ")
+    repeat(readLine().toInt()) {
+        val temp = readLine().split(" ")
         users.add(User(it, temp[0].toInt(), temp[1]))
     }
     sort(users)
-    for (user in users) println(user)
+    for (user in users) bw.write(user.toString())
+    bw.flush()
+    bw.close()
 }
