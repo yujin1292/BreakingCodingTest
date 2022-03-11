@@ -2,6 +2,7 @@
 
 ## ❤️‍🔥 Rule
 
+
 1. 스터디 멘토와  스터디원들이 문제를 Issue를 통해 제안
 2. 스터디 멘토가 문제 우선순위를 선정
 3. 스터디 멘토 및 스터디원들이 일주일 간 문제를 풀이
@@ -30,6 +31,7 @@
 </br>
 
 ## 🚩 Solved List
+
 
 
 ### 15주차 
@@ -62,6 +64,7 @@
 |[10814 나이순 정렬 ](https://www.acmicpc.net/problem/10814) | [#67](https://github.com/yujin1292/BreakingCodingTest/issues/67) |[@jeongiin](https://github.com/jeongiin)|
 |[13460 구슬탈출2](https://www.acmicpc.net/problem/13460 ) | [#61](https://github.com/yujin1292/BreakingCodingTest/issues/61) | [@j-miiin](https://github.com/j-miiin)|
 |[14888 연산자 끼워넣기](https://www.acmicpc.net/problem/14888) | [#62](https://github.com/yujin1292/BreakingCodingTest/issues/62) | [@j-miiin](https://github.com/j-miiin) |
+
 
 
 </br>
