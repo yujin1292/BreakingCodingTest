@@ -2,6 +2,7 @@
 
 ## ❤️‍🔥 Rule
 
+
 1. 스터디 멘토와  스터디원들이 문제를 Issue를 통해 제안
 2. 스터디 멘토가 문제 우선순위를 선정
 3. 스터디 멘토 및 스터디원들이 일주일 간 문제를 풀이
@@ -30,6 +31,7 @@
 </br>
 
 ## 🚩 Solved List
+
 
 
 ### 15주차 
@@ -65,6 +67,17 @@
 
 
 </br>
+
+### 18주차
+
+| 문제 | Issue | Suggested by |
+|------|:------:| :---:|
+|[14938 서강 그라운드](https://www.acmicpc.net/problem/14938) | [#79](https://github.com/yujin1292/BreakingCodingTest/issues/79) | [@yujin1292](https://github.com/yujin1292) |
+|[2064 IP 주소](https://www.acmicpc.net/problem/2064) | [#77](https://github.com/yujin1292/BreakingCodingTest/issues/77) | [@yujin1292](https://github.com/yujin1292) |
+|[1913 달팽이](https://www.acmicpc.net/problem/1913) | [#86](https://github.com/yujin1292/BreakingCodingTest/issues/86) | [@yujin1292](https://github.com/yujin1292) |
+|[17136 색종이 붙이기](https://www.acmicpc.net/problem/17136) | [#75](https://github.com/yujin1292/BreakingCodingTest/issues/75) | [@jeongiin](https://github.com/jeongiin) |
+|[2252 줄 세우기](https://www.acmicpc.net/problem/2252) | [#88](https://github.com/yujin1292/BreakingCodingTest/issues/88) | [@j-miiin](https://github.com/j-miiin) |
+
 </br>
 
 
