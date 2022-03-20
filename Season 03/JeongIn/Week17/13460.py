@@ -67,6 +67,8 @@ def bfs(rx, ry, bx, by):
                     visited[rx_next][ry_next][bx_next][by_next] = True
                     q.append((rx_next, ry_next, bx_next, by_next, depth+1))
 
+
+    print(depth)
     return -1
 
 print(rx, ry, bx, by)
