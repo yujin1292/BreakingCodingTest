@@ -66,6 +66,7 @@
 |[14888 연산자 끼워넣기](https://www.acmicpc.net/problem/14888) | [#62](https://github.com/yujin1292/BreakingCodingTest/issues/62) | [@j-miiin](https://github.com/j-miiin) |
 
 
+
 </br>
 
 ### 18주차
