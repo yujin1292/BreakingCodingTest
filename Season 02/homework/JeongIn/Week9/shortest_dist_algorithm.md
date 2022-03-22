@@ -334,9 +334,20 @@ edges.sort()
 for i in range(m):
     cost, a, b = edges[i]
     # find 연산 후, 부모노드 다르면 사이클 발생되지 않으므로 union 연산 수행 = 최소 신장 트리에 포함!
+<<<<<<< HEAD
+<<<<<<< HEAD
+    if find_parent(parent, a) != find_parent(parent, b):
+        union_parent(parent, a, b)
+=======
 
     if find_parent(a) != find_parent(b):
         union_parent(a, b)
+>>>>>>> upstream/main
+=======
+
+    if find_parent(a) != find_parent(b):
+        union_parent(a, b)
+>>>>>>> a2a01b06684221266f5f3aef09dfe0306c815779
         total_cost += cost
 
 print(total_cost) # 최소 신장 트리의 총 가중치 값 출력(옵션)
