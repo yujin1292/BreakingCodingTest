@@ -81,6 +81,20 @@
 
 </br>
 
+### 19주차
+
+| 문제 | Issue | Suggested by |
+|------|:------:| :---:|
+|[11659 구간 합 구하기 4](https://www.acmicpc.net/problem/11659) | [#78](https://github.com/yujin1292/BreakingCodingTest/issues/78) | [@yujin1292](https://github.com/yujin1292) |
+|[프로그래머스 삼각달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) | [#85](https://github.com/yujin1292/BreakingCodingTest/issues/85) | [@yujin1292](https://github.com/yujin1292) |
+|[1976 여행가자](https://www.acmicpc.net/problem/1976) | [#74](https://github.com/yujin1292/BreakingCodingTest/issues/74) | [@jeongiin](https://github.com/jeongiin) |
+|[2290 LCD Test](https://www.acmicpc.net/problem/2290) | [#95](https://github.com/yujin1292/BreakingCodingTest/issues/95) | [@jeongiin](https://github.com/jeongiin) |
+|[2281 데스노트](https://www.acmicpc.net/problem/2281) | [#89](https://github.com/yujin1292/BreakingCodingTest/issues/89) | [@j-miiin](https://github.com/j-miiin) |
+
+
+
+</br>
+
 
 ## 🤷‍♀️ How to Use Repository? 🤷
 1. 질문, 코드 도움필요, 공부하고싶은것들이 있어요!
