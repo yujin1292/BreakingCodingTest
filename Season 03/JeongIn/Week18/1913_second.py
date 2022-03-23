@@ -9,22 +9,23 @@ dy = [1,0,-1,0]
 board = [[0] * N for _ in range(N)] # N*N 사이즈의 맵 생성
 move = 0 # 특정 방향으로 얼마나 이동할 것인가
 now_num = 1 # 시작 숫자
-cx, cy = N//2, N//2 # current x, y -> 왼쪽 위, 즉 0,0
+cx, cy = (N-1)//2, (N-1)//2 # current x, y -> 왼쪽 위, 즉 0,0
 
 board[cx][cy] = now_num
 
 while True:
     for direction in range(4):
         for _ in range(move):
+
+            if now_num == target:
+                target_x , target_y = cx+1, cy+1 # 출력 시 1,1부터 시작하는 좌표계로 인식하므로 1을 더함
+
             cx+=dx[direction]
             cy+=dy[direction]
 
             now_num += 1
 
             board[cx][cy] = now_num
-
-            if now_num == target:
-                target_x , target_y = cx+1, cy+1 # 출력 시 1,1부터 시작하는 좌표계로 인식하므로 1을 더함
 
     if cx == cy == 0:
         break
