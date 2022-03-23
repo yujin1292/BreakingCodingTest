@@ -4,12 +4,11 @@ class Solution {
     val dr = intArrayOf(1, 0, -1)
 
     fun solution(n: Int): IntArray {
-        var answer = mutableListOf<Int>()
-        val triangle = Array(n+1){Array(n+1){0} }
+        val triangle = IntArray(n*(n+1)/2){0}
         var size = n
         var number = 0
         var row = 0
-        var col = 1
+        var col = 0
 
         repeat(n) {
             val direction = it % 3
@@ -18,17 +17,11 @@ class Solution {
                 col +=dc[direction]
                 number++
 
-                triangle[row][col] = number
+                triangle[((row-1)*row/2) + col] = number
             }
             size--
         }
 
-        for( i in 1 .. n){
-            for ( j in 1..i){
-                answer.add(triangle[i][j])
-            }
-        }
-
-        return answer.toIntArray()
+        return triangle
     }
 }
