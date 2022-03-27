@@ -4,72 +4,55 @@ import java.io.InputStreamReader;
 
 public class week19_programmersSnail {
 
-    public static int n, cnt = 1;
-    public static int[] result;
+    public static int[] dx = {1, 0, -1};    // 아래, 오른쪽, 대각선
+    public static int[] dy = {0, 1, -1};
+    public static int n = 1;
+    public static int[][] result;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
 
-        result = new int[n*(n+1)/2 + 1];
+        result = new int[n][n];
 
-        Snail(1, n);
+        Snail();
 
         StringBuilder sb = new StringBuilder();
-        for (int i = 1; i < n*(n+1)/2 + 1; i++) sb.append(result[i]).append(" ");
+        sb.append("[");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (result[i][j] != 0) {
+                    if (i == n-1 && j == n-1) sb.append(result[i][j]).append("]");
+                    else sb.append(result[i][j]).append(",");
+                }
+            }
+        }
 
         System.out.println(sb);
     }
 
-    public static void Snail(int start, int size) {
+    public static void Snail() {
+        int dir = 0;
+        int limit = n*(n+1)/2;  // 결과 배열에 들어갈 총 숫자 개수
+        int nextX = 0;
+        int nextY = 0;
+        int cnt = 1;
 
-        if (cnt > n*(n+1)/2 || size == 0) return;
+        while (cnt <= limit) {
+            result[nextX][nextY] = cnt++;
 
-        if (size == 1) {
-            result[start] = cnt;
-            cnt++;
-        }
+            nextX += dx[dir];
+            nextY += dy[dir];
 
-        else if (size == 2) {
-            for (int i = 0; i < 3; i++) {
-                result[start] = cnt;
-                start++;
-                cnt++;
+            // 범위 밖이거나 이미 숫자를 채운 곳일 경우
+            if (nextX < 0 || nextY < 0 || nextX >= n || nextY >= n || result[nextX][nextY] != 0) {
+                nextX -= dx[dir];
+                nextY -= dy[dir];
+                dir++;  // 방향을 바꿈
+                dir %= 3;
+                nextX += dx[dir];
+                nextY += dy[dir];
             }
-        }
-
-        else if (size >= 3) {
-            int dir = 0;
-            int last = -1;
-            while (dir < 3) {
-                int limit = size*(size+1)/2;
-                if (dir == 0) {
-                    int idx = 0;
-                    for (int i = start; i <= limit; i += idx) {
-                        result[i] = cnt;
-                        idx++;
-                        cnt++;
-                        last = i;
-                    }
-                } else if (dir == 1) {
-                    for (int i = last+1; i < limit; i++) {
-                        result[i] = cnt;
-                        cnt++;
-                        last = i;
-                    }
-                } else {
-                    int idx = size+1;
-                    for (int i = limit; i >= start+2; i -= idx) {
-                        result[i] = cnt;
-                        System.out.println("result[" + i + "] = " + result[i]);
-                        idx--;
-                        cnt++;
-                    }
-                }
-
-                dir++;
-            }
-            Snail(start + 4, size - 3);
         }
     }
 }
