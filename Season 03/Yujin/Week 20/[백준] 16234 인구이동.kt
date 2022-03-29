@@ -17,8 +17,8 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
         r = it[2]
     }
 
+    // 2차원 배열을 한줄로 다뤘습니다 (x,y) -> x*n + y
     val map = mutableListOf<Int>()
-
     repeat(n) {
         map.addAll(readLine().split(" ").map { it.toInt() })
     }
@@ -36,17 +36,17 @@ fun getNationalBorder(nation: MutableList<Int>): Array<MutableSet<Int>> {
     val nationBorder = Array(n * n) {  mutableSetOf<Int>() }
     for (i in 0 until n) {
         for (j in 0 until n) {
-            val current = i * n + j
+            val current = i * n + j // 현재 계산할 국가
 
             for (dir in 0 until 4) {
                 val nextCol = i + dc[dir]
                 val nextRow = j + dr[dir]
                 if (nextCol !in 0 until n) continue
                 if (nextRow !in 0 until n) continue
-                val nextNation = nextCol * n + nextRow
+                val nextNation = nextCol * n + nextRow // 인접한 국가
 
                 if (abs(nation[current] - nation[nextNation]) in l..r) {
-                    // open
+                    // 국경 열기
                     nationBorder[current].add(nextNation)
                     nationBorder[nextNation].add(current)
                 }

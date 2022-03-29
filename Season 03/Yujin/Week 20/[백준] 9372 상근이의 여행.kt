@@ -31,6 +31,7 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     val testcase = readLine().toInt()
 
     repeat(testcase) {
+        // 크루스칼 알고리즘 응용입니다 distance가 모두 1 이라고 생각하면 쉬울듯하네요
         val (n, m) = readLine().split(" ").map { it.toInt() }
         val parent = IntArray(n) { it }
         var answer = 0

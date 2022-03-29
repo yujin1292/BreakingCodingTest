@@ -15,6 +15,7 @@ fun main(): Unit = with(BufferedReader(InputStreamReader(System.`in`))) {
     for (track in 0 until N) {
         for (vol in 0..M) {
             if (isPossible[track][vol]) {
+                // 다음 track 계산
                 val increasedVolume = vol + volume[track + 1]
                 val decreasedVolume = vol - volume[track + 1]
 
@@ -24,12 +25,15 @@ fun main(): Unit = with(BufferedReader(InputStreamReader(System.`in`))) {
         }
     }
 
+    // 최대값을 구해야 하니 M 부터 하나씩 찾아내려감
     for (vol in M downTo 0 ) {
         if (isPossible[N][vol]) {
             println(vol)
-            return@with
+            return@with // 화면 출력 후 함수 종료
         }
     }
+
+    // 송출못하는 경우
     println(-1)
 }
 
