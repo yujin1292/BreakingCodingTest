@@ -32,7 +32,6 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     println(day)
 }
 
-// O(N^2)
 fun getNationalBorder(nation: MutableList<Int>): Array<MutableSet<Int>> {
     val nationBorder = Array(n * n) {  mutableSetOf<Int>() }
     for (i in 0 until n) {
@@ -59,7 +58,6 @@ fun getNationalBorder(nation: MutableList<Int>): Array<MutableSet<Int>> {
 }
 
 
-// O(N^2)
 fun move(nation: MutableList<Int>): Boolean {
 
     val border = getNationalBorder(nation)
