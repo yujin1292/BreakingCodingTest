@@ -25,6 +25,7 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
 
     var day = 0
     while (true) {
+        // map은 move 함수에서 call-by-reference 로 진행되기 때문에 함수실행 후 계속 바뀜
         if (!move(map)) break // 인구 이동이 없을 시
         day++
     }
