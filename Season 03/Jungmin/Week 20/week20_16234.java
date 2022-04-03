@@ -5,9 +5,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class week20_16234 {
 
@@ -17,6 +15,7 @@ public class week20_16234 {
     public static int N, L, R;
     public static int[][] population;
     public static int[][] visited;
+    public static List<int[]> list;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -27,7 +26,6 @@ public class week20_16234 {
         R = Integer.parseInt(st.nextToken());
 
         population = new int[N][N];
-        visited = new int[N][N];
 
         for (int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine());
@@ -40,15 +38,16 @@ public class week20_16234 {
         int day = 0;
         while(true) {
             boolean isOpen = false;
+            visited = new int[N][N];
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
                     for(int k = 0; k < 4; k++) {
-                        int nextX = i + dx[k];   // 다음으로 이동할 X 좌표
-                        int nextY = j + dy[k];   // 다음으로 이동할 Y 좌표
-
-                        if (nextX >= 0 && nextY >= 0 && nextX < N && nextY < N) {
-                            int diff = Math.abs(population[i][j] - population[nextX][nextY]);
-                            if (L <= diff && diff <= R) isOpen = true;
+                        if (visited[i][j] == 0) {
+                            int populationSum = bfs(i, j);
+                            if (list.size() > 1) {
+                                isOpen = true;
+                                movePopulation(populationSum);
+                            }
                         }
                     }
                 }
@@ -56,65 +55,67 @@ public class week20_16234 {
 
             if (!isOpen) break;
 
-            visited = new int[N][N];
-
-            int idx = 1;
-            for (int i = 0; i < N; i++) {
-                for (int j = 0; j < N; j++) {
-                    if (visited[i][j] == 0) bfs(i, j, idx++);
-                }
-            }
-
             day++;
         }
 
         System.out.println(day);
     }
 
-    public static void bfs(int x, int y, int idx) {
+    public static int bfs(int x, int y) {
         visited[x][y] = 1;
 
         Queue<int[]> queue = new LinkedList<>();
         int[] tmp = {x, y};
         queue.offer(tmp);
 
-        int sum = 0;
-        int unionNum = 1;
+        list = new ArrayList<>();
+        list.add(tmp);
+
+        int sum = population[x][y];
+//        int unionNum = 1;
 
         while(!queue.isEmpty()) {
             int[] cur = queue.poll();
             int curX = cur[0];  // 현재 X 좌표
             int curY = cur[1];  // 현재 Y 좌표
-            sum += population[curX][curY];
-            System.out.println("curX, curY = " + curX + " " + curY);
 
             // 상하좌우 방향으로 이동
             for(int i = 0; i < 4; i++) {
                 int nextX = curX + dx[i];   // 다음으로 이동할 X 좌표
                 int nextY = curY + dy[i];   // 다음으로 이동할 Y 좌표
-                System.out.println("nextX, nextY = " + nextX + " " + nextY);
 
                 // 다음으로 이동할 좌표가 범위 내일 때
-                if (nextX >= 0 && nextY >= 0 && nextX < N && nextY < N) {
+                if (nextX >= 0 && nextY >= 0 && nextX < N && nextY < N && visited[nextX][nextY] == 0) {
                     // 다음으로 이동할 좌표가 갈 수 있는 길이고, 이전에 간 적 없는 길일 때
                     int diff = Math.abs(population[curX][curY] - population[nextX][nextY]);
-                    if (L <= diff && diff <= R && visited[nextX][nextY] == 0) {
-                        System.out.println("diff = " + diff);
+                    if (L <= diff && diff <= R) {
                         int[] temp = {nextX, nextY};
                         queue.offer(temp);
-                        visited[nextX][nextY] = idx;
-                        unionNum++;
+                        visited[nextX][nextY] = 1;
+                        sum += population[nextX][nextY];
+                        list.add(temp);
                     }
                 }
             }
         }
 
-        System.out.println("sum, unionNum = " + sum + " " + unionNum);
-        int unionPopulation = sum / unionNum;
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                if (visited[i][j] == idx) population[i][j] = unionPopulation;
-            }
+        return sum;
+
+//        System.out.println("sum, unionNum = " + sum + " " + unionNum);
+//        int unionPopulation = sum / unionNum;
+//        for (int i = 0; i < N; i++) {
+//            for (int j = 0; j < N; j++) {
+//                if (visited[i][j] == idx) population[i][j] = unionPopulation;
+//            }
+//        }
+    }
+
+    public static void movePopulation(int populationSum) {
+
+        int changedPopulation = populationSum / list.size();
+
+        for (int[] arr : list) {
+            population[arr[0]][arr[1]] = changedPopulation;
         }
     }
 }
