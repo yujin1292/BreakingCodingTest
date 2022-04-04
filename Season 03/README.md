@@ -104,6 +104,20 @@
 |[14226 이모티콘](https://www.acmicpc.net/problem/14226) | [#90](https://github.com/yujin1292/BreakingCodingTest/issues/90) | [@j-miiin](https://github.com/j-miiin) |
 
 
+
+</br>
+
+### 21주차
+
+| 문제 | Issue | Suggested by |
+|------|:------:| :---:|
+|[17780 새로운 게임](https://www.acmicpc.net/problem/17780) | [#87](https://github.com/yujin1292/BreakingCodingTest/issues/87) | [@j-miiin](https://github.com/j-miiin) |
+|[1707 이분 그래프](https://www.acmicpc.net/problem/1707) | [#59](https://github.com/yujin1292/BreakingCodingTest/issues/59) | [@yujin1292](https://github.com/yujin1292) |
+|[2667 단지번호붙이기](https://www.acmicpc.net/problem/2667) | [#123](https://github.com/yujin1292/BreakingCodingTest/issues/123) |  [@yujin1292](https://github.com/yujin1292) |
+|[2302 극장좌석](https://www.acmicpc.net/problem/2302) | [#109](https://github.com/yujin1292/BreakingCodingTest/issues/109) | [@jeongiin](https://github.com/jeongiin) |
+
+
+
 </br>
 
 
