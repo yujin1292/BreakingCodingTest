@@ -117,6 +117,18 @@
 |[2302 극장좌석](https://www.acmicpc.net/problem/2302) | [#109](https://github.com/yujin1292/BreakingCodingTest/issues/109) | [@jeongiin](https://github.com/jeongiin) |
 
 
+</br>
+
+### 22주차
+
+| 문제 | Issue | Suggested by |
+|------|:------:| :---:|
+|[1713 후보 추천하기](https://www.acmicpc.net/problem/1713) | [#110](https://github.com/yujin1292/BreakingCodingTest/issues/110) | [@jeongiin](https://github.com/jeongiin) |
+|[4195 친구 네트워크](https://www.acmicpc.net/problem/4195) | [#112](https://github.com/yujin1292/BreakingCodingTest/issues/112) | [@jeongiin](https://github.com/jeongiin) |
+|[14503 로봇 청소기](https://www.acmicpc.net/problem/14503) | [#98](https://github.com/yujin1292/BreakingCodingTest/issues/98) |  [@yujin1292](https://github.com/yujin1292) |
+|[1012 유기농 배추](https://www.acmicpc.net/problem/1012) | [#117](https://github.com/yujin1292/BreakingCodingTest/issues/117) | [@j-miiin](https://github.com/j-miiin) |
+
+
 
 </br>
 
