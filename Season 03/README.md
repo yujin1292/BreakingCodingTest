@@ -137,7 +137,7 @@
 |------|:------:| :---:|
 |[ 1562 계단 수 ](https://www.acmicpc.net/problem/1562) | [#129](https://github.com/yujin1292/BreakingCodingTest/issues/129) | [@jeongiin](https://github.com/jeongiin) |
 |[ 13397 구간 나누기 2 ](https://www.acmicpc.net/problem/13397) | [#81](https://github.com/yujin1292/BreakingCodingTest/issues/81) |  [@yujin1292](https://github.com/yujin1292) |
-|[ 5107 마니또 ](https://www.acmicpc.net/problem/5107) | [#121](https://github.com/yujin1292/BreakingCodingTest/issues/121) | [@jeongiin](https://github.com/jeongiin) |
+|[ 5107 마니또 ](https://www.acmicpc.net/problem/5107) | [#121](https://github.com/yujin1292/BreakingCodingTest/issues/121) | [@j-miiin](https://github.com/j-miiin) |
 
 
 
