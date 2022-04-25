@@ -46,7 +46,7 @@ int main() {
 		}
 		else {
 			dp[i][DRINK_FIRST] = dp[i - 2][MAX_VALUE] + glass[i];
-			dp[i][DRINK_SECOND] = dp[i - 1][0] + glass[i];
+			dp[i][DRINK_SECOND] = dp[i - 1][DRINK_FIRST] + glass[i];
 		}
 
 		dp[i][MAX_VALUE] = max(dp[i - 1][MAX_VALUE], dp[i][DRINK_FIRST], dp[i][DRINK_SECOND]);
