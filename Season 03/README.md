@@ -144,6 +144,20 @@
 </br>
 
 
+### 24주차
+
+| 문제 | Issue | Suggested by |
+|------|:------:| :---:|
+|[16236 아기 상어](https://www.acmicpc.net/problem/16236) | [#134](https://github.com/yujin1292/BreakingCodingTest/issues/134) | [@yujin1292](https://github.com/yujin1292) |
+|[2156 포도주 시식](https://www.acmicpc.net/problem/2156) | [#135](https://github.com/yujin1292/BreakingCodingTest/issues/135) |   [@yujin1292](https://github.com/yujin1292) |
+|[1541 잃어버린 괄호](https://www.acmicpc.net/problem/1541) | [#118](https://github.com/yujin1292/BreakingCodingTest/issues/118) | [@j-miiin](https://github.com/j-miiin) |
+
+
+
+
+</br>
+
+
 </br>
 
 
