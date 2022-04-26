@@ -89,7 +89,7 @@ void eatFish(Fish f) {
 	curCol = f.col;
 
 	eaten++;
-	map[f.row][f.col] = 9;
+	map[f.row][f.col] = SHARK;
 
 	if (eaten == sharkSize) {
 		eaten = 0;
