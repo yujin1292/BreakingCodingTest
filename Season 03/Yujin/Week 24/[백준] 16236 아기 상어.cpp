@@ -30,8 +30,8 @@ public:
 		distance = d;
 	}
 
-	bool operator< (Fish f){
-		if (distance == f.distance) {
+	bool operator< (Fish f){ // 대소비교 연산 < 를 오버라이딩!! Fish끼리 비교할때 (r,c)과의  거리를 기준으로한다
+		if (distance == f.distance) { // 거리가 같을경우 문제에 있는 기준으로 비교
 			if (row == f.row) {
 				return col < f.col;
 			}
@@ -41,7 +41,7 @@ public:
 	}
 };
 
-vector<Fish> getTargetFish() {
+vector<Fish> getTargetFish() { // 먹을 수 있는 모든 물고기들을 리스트에 담아 반환
 	vector<Fish> target;
 
 	vector<vector<int>> visited( n, vector<int>(n, 0) ); // n * n 리스트 생성
@@ -83,7 +83,7 @@ vector<Fish> getTargetFish() {
 	return target;
 }
 
-void eatFish(Fish f) {
+void eatFish(Fish f) { // 냠
 	map[curRow][curCol] = 0;
 	curRow = f.row;
 	curCol = f.col;
@@ -121,8 +121,8 @@ int main() {
 		// 먹을수 없다면 break
 		if (list.empty()) break;
 		
-		sort(list.begin(), list.end());
-		eatFish(list.front());
+		sort(list.begin(), list.end()); // 거리순으로 정렬
+		eatFish(list.front()); // 맨 앞에 있는 물고기( list.front() )가 젤 가까움
 		time += list.front().distance;
 	}
 
