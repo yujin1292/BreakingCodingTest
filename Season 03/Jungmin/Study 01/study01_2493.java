@@ -38,7 +38,7 @@ public class study01_2493 {
         for (int i = 1; i < N; i++) {
             int nextH = Integer.parseInt(st.nextToken());
 
-            while (stack.size() > 0 && nextH > stack.peek().height) {
+            while (stack.size() > 0 && nextH > stack.peek().height) {   // 신호를 수신할 수 있는 탑이 나올 때까지 pop
                 stack.pop();
             }
 
