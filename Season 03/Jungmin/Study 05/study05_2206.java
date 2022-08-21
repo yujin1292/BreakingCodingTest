@@ -84,7 +84,7 @@ public class study05_2206 {
                     }
                 }
             }
-            result++;
+            result += 1;
         }
 
         return -1;
